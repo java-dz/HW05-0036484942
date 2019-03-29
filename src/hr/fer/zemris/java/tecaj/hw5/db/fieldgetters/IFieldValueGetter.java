@@ -15,12 +15,12 @@ import hr.fer.zemris.java.tecaj.hw5.db.StudentRecord;
  */
 public interface IFieldValueGetter {
 
-	/**
-	 * Returns a specific field value of the student specified by his record.
-	 * 
-	 * @param record the specified record
-	 * @return a specific field value
-	 */
-	public String get(StudentRecord record);
+    /**
+     * Returns a specific field value of the student specified by his record.
+     *
+     * @param record the specified record
+     * @return a specific field value
+     */
+    public String get(StudentRecord record);
 
 }

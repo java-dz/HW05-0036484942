@@ -11,12 +11,12 @@ import hr.fer.zemris.java.tecaj.hw5.db.StudentRecord;
  */
 public class GetterJmbag implements IFieldValueGetter {
 
-	/**
-	 * Returns the JMBAG of the student specified by the record.
-	 */
-	@Override
-	public String get(StudentRecord record) {
-		return record.getJmbag();
-	}
+    /**
+     * Returns the JMBAG of the student specified by the record.
+     */
+    @Override
+    public String get(StudentRecord record) {
+        return record.getJmbag();
+    }
 
 }

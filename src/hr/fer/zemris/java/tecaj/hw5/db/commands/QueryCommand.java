@@ -20,29 +20,29 @@ import hr.fer.zemris.java.tecaj.hw5.db.filters.QueryFilter;
  */
 public class QueryCommand extends AbstractCommand {
 
-	/** Defines the proper syntax for using this command */
-	private static final String SYNTAX = "query expression1 AND expression2 AND...";
-	
-	/**
-	 * Constructs a new command object of type {@code QueryCommand}.
-	 */
-	public QueryCommand() {
-		super("query");
-	}
+    /** Defines the proper syntax for using this command */
+    private static final String SYNTAX = "query expression1 AND expression2 AND...";
 
-	@Override
-	public void execute(String s) {
-		if (s == null) {
-			throwSyntaxException(SYNTAX);
-		}
-		
-		QueryFilter filter = new QueryFilter(s);
-		StudentDatabase database = StudentDB.getDatabase();
-		
-		List<StudentRecord> filtered = database.filter(filter);
-		String output = StudentPrinter.print(filtered);
-		
-		StudentDB.setOutput(output);
-	}
+    /**
+     * Constructs a new command object of type {@code QueryCommand}.
+     */
+    public QueryCommand() {
+        super("query");
+    }
+
+    @Override
+    public void execute(String s) {
+        if (s == null) {
+            throwSyntaxException(SYNTAX);
+        }
+
+        QueryFilter filter = new QueryFilter(s);
+        StudentDatabase database = StudentDB.getDatabase();
+
+        List<StudentRecord> filtered = database.filter(filter);
+        String output = StudentPrinter.print(filtered);
+
+        StudentDB.setOutput(output);
+    }
 
 }

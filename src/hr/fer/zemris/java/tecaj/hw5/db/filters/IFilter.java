@@ -10,13 +10,13 @@ import hr.fer.zemris.java.tecaj.hw5.db.StudentRecord;
  */
 public interface IFilter {
 
-	/**
-	 * Returns true if the filter accepts the specified <tt>record</tt>. False
-	 * otherwise.
-	 * 
-	 * @param record record to be tested
-	 * @return true if the filter accepts the specified <tt>record</tt>
-	 */
-	public boolean accepts(StudentRecord record);
+    /**
+     * Returns true if the filter accepts the specified <tt>record</tt>. False
+     * otherwise.
+     *
+     * @param record record to be tested
+     * @return true if the filter accepts the specified <tt>record</tt>
+     */
+    public boolean accepts(StudentRecord record);
 
 }

@@ -11,15 +11,15 @@ package hr.fer.zemris.java.tecaj.hw5.db.lexer;
  */
 public enum LexerState {
 
-	/**
-	 * The default Lexer state. Reads attributes and operators.
-	 */
-	BASIC,
+    /**
+     * The default Lexer state. Reads attributes and operators.
+     */
+    BASIC,
 
-	/**
-	 * This state of Lexer should be set when Lexer has encountered a
-	 * string-beginning character and reads a sequence of character until Lexer
-	 * encounters a string-ending character.
-	 */
-	READING_STRING
+    /**
+     * This state of Lexer should be set when Lexer has encountered a
+     * string-beginning character and reads a sequence of character until Lexer
+     * encounters a string-ending character.
+     */
+    READING_STRING
 }

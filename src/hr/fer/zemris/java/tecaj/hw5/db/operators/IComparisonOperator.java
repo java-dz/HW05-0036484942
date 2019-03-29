@@ -18,21 +18,21 @@ import java.util.Locale;
  * @see OperatorLike
  */
 public interface IComparisonOperator {
-	
-	/**
-	 * A {@linkplain Collator} that is used to obtain a locale-sensitive String
-	 * comparison in Croatian.
-	 */
-	public static Collator HR_COLLATOR = Collator.getInstance(new Locale("hr", "HR"));
 
-	/**
-	 * Returns true if the comparison result of the operation the implementing
-	 * class is doing is satisfied. False otherwise.
-	 * 
-	 * @param value1 a value
-	 * @param value2 a value
-	 * @return the comparison result
-	 */
-	public boolean satisfied(String value1, String value2);
+    /**
+     * A {@linkplain Collator} that is used to obtain a locale-sensitive String
+     * comparison in Croatian.
+     */
+    public static Collator HR_COLLATOR = Collator.getInstance(new Locale("hr", "HR"));
+
+    /**
+     * Returns true if the comparison result of the operation the implementing
+     * class is doing is satisfied. False otherwise.
+     *
+     * @param value1 a value
+     * @param value2 a value
+     * @return the comparison result
+     */
+    public boolean satisfied(String value1, String value2);
 
 }

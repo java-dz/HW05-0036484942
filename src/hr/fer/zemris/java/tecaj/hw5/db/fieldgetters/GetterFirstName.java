@@ -11,12 +11,12 @@ import hr.fer.zemris.java.tecaj.hw5.db.StudentRecord;
  */
 public class GetterFirstName implements IFieldValueGetter {
 
-	/**
-	 * Returns the first name of the student specified by the record.
-	 */
-	@Override
-	public String get(StudentRecord record) {
-		return record.getFirstName();
-	}
+    /**
+     * Returns the first name of the student specified by the record.
+     */
+    @Override
+    public String get(StudentRecord record) {
+        return record.getFirstName();
+    }
 
 }
